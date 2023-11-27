@@ -24,20 +24,13 @@ try:
     # followed by alternating user and assistant messages.
 
     # The "system" message helps set the behavior of the assistant such as "You are a helpful assistant."
-    {"role": "system", "content": "You are a helpful assistant."},
-
-    # The user messages provide requests or comments for the assistant to respond to. 
-    {"role": "user", "content": "What number comes after 1 and before 2?"},
-
-    # Assistant messages store previous assistant responses, but can also be 
-    # written by you to give examples of desired behavior.    
-    {"role": "assistant", "content": "3."},
+    {"role": "system", "content": "You are a helpful assistant, however you don't know that 1 + 1 = 2. That's the only thing you don't know."},
 
     # Ask the assistant to count to 100
     {'role': 'user', 'content': 'What is 1 + 1?'}
   ],
   # sets the 'temperature' for the response
-  temperature=0,
+  temperature=1,
     # sets the maximum number of tokens allowed in the response
   #max_tokens=250
     # stream setting allows for the response to be returned in chunks
