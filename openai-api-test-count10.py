@@ -24,11 +24,11 @@ try:
     {"role": "system", "content": "You are a helpful assistant."},
 
     # The user messages provide requests or comments for the assistant to respond to. 
-    {"role": "user", "content": "What number comes after 1 and before 2?"},
+    {"role": "user", "content": "What number comes after 1 and before 3?"},
 
     # Assistant messages store previous assistant responses, but can also be 
     # written by you to give examples of desired behavior.    
-    {"role": "assistant", "content": "3."},
+    {"role": "assistant", "content": "2."},
 
     # Ask the assistant to count to 100
     {'role': 'user', 'content': 'Prove it to me! Count to 10, with a comma between each number and no newlines. E.g., 1, 2, 3, ...'}
